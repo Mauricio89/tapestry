@@ -5,12 +5,11 @@
 package com.mycompany.tapestry_1.utils;
 
 import java.io.ByteArrayInputStream;
-import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import org.apache.tapestry5.StreamResponse;
 import org.apache.tapestry5.services.Response;
-import com.mycompany.tapestry_1.services.file;
+import com.mycompany.tapestry_1.services.File;
 
 /**
  *

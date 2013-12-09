@@ -19,6 +19,6 @@ public enum JasperAssets {
     }
     
     public String getURL() {
-        return "http://host/" + name;
+        return "http://localhost:8080/" + name;
     }
 }
