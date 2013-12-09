@@ -1,0 +1,75 @@
+<html t:type="Plantilla" titulo="ITS San Gabriel" t:sidebarTitle="Framework Version"
+        xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd" 
+        xmlns:p="tapestry:parameter">
+        <div align="center"> 
+            <h20 align="center" class="style3"><strong>Insertar Pagos de los Alumnos</strong></h20> 
+            <br/>
+            <br/>  
+           <t:form>
+               <t:errors/>
+                <table border="1" width="700" cellspacing="1" cellpadding="1" align="center">
+                    <thead align="center">
+                        <tr align="center">
+                            <th colspan="2" align="center" class="teeee"><h2>INFORMACION DEL PAGO</h2></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <tr> 
+                        <td>                           
+                            <span>Alumnos:</span>
+                        </td> 
+                        <td >                 
+                            <select t:type="select" t:model="alumnosModel" t:value="alumno" t:encoder="alumnoEncoder" t:validate="required"></select>
+                        </td>                                  
+                    </tr>
+                    <tr> 
+                        <td>                           
+                            <span>Pagos:</span>
+                        </td> 
+                        <td >                 
+                            <select t:type="select" t:model="pagosModel" t:value="pago" t:encoder="pagoEncoder" t:validate="required"></select>    
+                        </td>                                  
+                    </tr>
+                    <tr> 
+                        <td>                           
+                            <span>Carreras:</span>
+                        </td> 
+                        <td >                 
+                           <select t:type="select" t:model="carrerasModel" t:value="carrera" t:encoder="carreraEncoder" t:validate="required"></select>   
+                        </td>                                  
+                    </tr>
+                    <tr> 
+                        <td>                           
+                            <span>Semestres:</span>
+                        </td> 
+                        <td >                 
+                            <select t:type="select" t:model="semestresModel" t:value="semestre" t:encoder="semestreEncoder" t:validate="required"></select>    
+                        </td>                                  
+                    </tr>
+                    <tr> 
+                        <td>                           
+                            <span>Seccion:</span>
+                        </td> 
+                        <td >                 
+                            <p><t:textfield t:id="seccion" value="alumno_pago.seccion" t:validate="required" size="60" maxlength="60"/></p>    
+                        </td>                                  
+                    </tr>
+                    <tr> 
+                        <td>                           
+                            <span>Periodo:</span>
+                        </td> 
+                        <td >                 
+                            <p><t:textfield t:id="periodo" value="alumno_pago.periodo" t:validate="required" size="60" maxlength="60"/></p>    
+                        </td>                                  
+                    </tr>
+                   <tr>
+                       <td align="center" colspan="2">
+                            <!--input type="submit" value="Crear"/-->
+                            <p><t:submit value="Guardar"/> <t:submit value="Cancelar" mode="cancel"/></p>
+                        </td>
+                   </tr>
+                   </tbody>
+               </table>
+         </t:form>
+    </div>
+ </html>

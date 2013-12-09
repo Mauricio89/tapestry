@@ -1,0 +1,50 @@
+<html t:type="Plantilla" titulo="ITS San Gabriel" t:sidebarTitle="Framework Version"
+        xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd" 
+        xmlns:p="tapestry:parameter">
+        <div align="center"> 
+            <h20 align="center" class="style3"><strong>Actualizar Pagos</strong></h20> 
+            <br/>
+            <br/>  
+           <t:form>
+               <t:errors/>
+                <table border="1" width="700" cellspacing="1" cellpadding="1" align="center">
+                    <thead align="center">
+                        <tr align="center">
+                            <th colspan="2" align="center" class="teeee"><h2>INFORMACION DE LOS PAGOS</h2></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <tr> 
+                        <td>                           
+                            <span>N.-:</span>
+                        </td> 
+                        <td >                 
+                            <p><t:textfield t:id="idpago" value="pago.idpago" t:validate="required" size="5" maxlength="5" readonly="false"/></p>    
+                        </td>                                  
+                    </tr>
+                    <tr> 
+                        <td>                           
+                            <span>Pago:</span>
+                        </td> 
+                        <td >                 
+                            <p><t:textfield t:id="npago" value="pago.npago" t:validate="required" size="60" maxlength="60"/></p>    
+                        </td>                                  
+                    </tr>
+                    <tr> 
+                        <td>                           
+                            <span>Precio:</span>
+                        </td> 
+                        <td >                 
+                            <p><t:textfield t:id="precio" value="pago.precio" t:validate="required" size="6" maxlength="6"/></p>    
+                        </td>                                  
+                    </tr>
+                   <tr>
+                       <td align="center" colspan="2">                            
+                            <p><t:submit value="Actualizar"/> <t:submit value="Cancelar" mode="cancel"/></p>
+                        </td>
+                   </tr>
+                   </tbody>
+               </table>
+         </t:form>
+    </div>
+ </html>

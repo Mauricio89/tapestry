@@ -1,0 +1,91 @@
+<html t:type="Plantilla1" titulo="ITS San Gabriel" t:sidebarTitle="Framework Version"
+        xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd" 
+        xmlns:p="tapestry:parameter">
+        <div align="center"> 
+            <h20 align="center" class="style3"><strong>Insertar Usuarios</strong></h20> 
+            <br/>
+            <br/>  
+           <t:form>
+               <t:errors/>
+                <table border="1" width="700" cellspacing="1" cellpadding="1" align="center">
+                    <thead align="center">
+                        <tr align="center">
+                            <th colspan="2" align="center" class="teeee"><h2>INFORMACION DE LOS USUARIOS</h2></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <tr> 
+                        <td>                           
+                            <span>C&eacute;dula:</span>
+                        </td> 
+                        <td >                 
+                            <p><t:textfield t:id="cedula" value="usuario.cedula" t:validate="required" size="10" maxlength="10" /></p>    
+                        </td>                                  
+                    </tr>
+                    <tr> 
+                        <td>                           
+                            <span>Nombres Completos:</span>
+                        </td> 
+                        <td >                 
+                            <p><t:textfield t:id="nombres" value="usuario.nombres" t:validate="required" size="70" maxlength="100" /></p>    
+                        </td>                                  
+                    </tr>
+                    <tr> 
+                        <td>                           
+                            <span>Direcci&oacute;n:</span>
+                        </td> 
+                        <td >                 
+                            <p><t:textfield t:id="direccion" value="usuario.direccion" t:validate="required" size="70" maxlength="100" /></p>    
+                        </td>                                  
+                    </tr>
+                    <tr> 
+                        <td>                           
+                            <span>Tel&eacute;fono:</span>
+                        </td> 
+                        <td >                 
+                            <p><t:textfield t:id="telefono" value="usuario.telefono" t:validate="required" size="10" maxlength="10" /></p>    
+                        </td>                                  
+                    </tr>
+                    <tr> 
+                        <td>                           
+                            <span>C&eacute;lular:</span>
+                        </td> 
+                        <td >                 
+                            <p><t:textfield t:id="celular" value="usuario.celular" t:validate="required" size="10" maxlength="10" /></p>    
+                        </td>                                  
+                    </tr>
+                    <tr> 
+                        <td>                           
+                            <span>Correo:</span>
+                        </td> 
+                        <td >                 
+                            <p><t:textfield t:id="correo" value="usuario.correo" type="email" size="60" maxlength="60"/></p>
+                        </td>                                  
+                    </tr>
+                    <tr> 
+                        <td>                           
+                            <span>Cuenta:</span>
+                        </td> 
+                        <td >                 
+                            <p><t:textfield t:id="cuenta" value="usuario.cuenta" t:validate="required" size="60" maxlength="60" /></p>    
+                        </td>                                  
+                    </tr>
+                    <tr> 
+                        <td>                           
+                            <span>Clave:</span>
+                        </td> 
+                        <td >                 
+                            <p><t:passwordfield t:id="clave" value="usuario.clave" t:validate="required" size="60" maxlength="60" /></p>    
+                        </td>                                  
+                    </tr>                                      
+                   <tr>
+                       <td align="center" colspan="2">
+                            <!--input type="submit" value="Crear"/-->
+                            <p><t:submit value="Guardar"/> <t:submit value="Cancelar" mode="cancel"/></p>
+                        </td>
+                   </tr>
+                   </tbody>
+               </table>
+         </t:form>       
+    </div>   
+ </html>

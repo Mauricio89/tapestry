@@ -1,0 +1,13 @@
+<html t:type="Plantilla" titulo="SAN GABRIEL"
+      t:sidebarTitle="Framework Version"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd"
+      xmlns:p="tapestry:parameter">
+        <!-- Most of the page content, including <head>, <body>, etc. tags, comes from Layout.tml -->
+    <table align="center">
+            <tr>
+                <td >
+                    <img alt="Logo" style="border-width:0" src="${context:Recursos/Imagenes/logo.jpg}"/>
+                </td>  
+            </tr> 
+        </table>  
+</html>

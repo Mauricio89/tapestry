@@ -1,0 +1,49 @@
+<html t:type="Plantilla1" titulo="ITS San Gabriel" t:sidebarTitle="Framework Version"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd"
+      xmlns:p="tapestry:parameter">
+
+<div align="center">           
+    <!-- tabla contenido -->         
+        <table width="100%" border="0" bordercolor="#8D0A0C" cellpadding="0" cellspacing="0" align="center">
+			<tbody>
+                <!-- titulo -->
+				<tr>
+                                    &nbsp;
+                                    <td align="center" colspan="3"><font size="5" color="#009999" face="Georgia, Times New Roman, Times, serif" dir="ltr" > <b>HISTORIA </b> </font> </td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+				</tr>
+                <!-- contenido central -->               				
+      	   <tr>
+					<td align="center">
+						<table border="0" cellpadding="0" cellspacing="0" width="650">
+							<tr>
+								<td class="txtcuerpo" style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: justify; font-size:11pt">
+                                                                    <p>En la ciudad de Riobamba el 15 de junio de 2.001 es creado mediante acuerdo 0626 del Ministerio de Educaci&oacute;n, 
+                                                                        que nace del deseo de superaci&oacute;n y mejoramiento en la formaci&oacute;n de profesionales, lo que hizo que se realice un 
+                                                                        proyecto educativo, para que sea transformado en Instituto Tecnol&oacute;gico. El Ministerio de Educaci&oacute;n y Cultura, 
+                                                                        acogiendo el pedido de estudiantes, padres de familia y ciudadan&iacute;a acept&oacute; la petici&oacute;n y mediante acuerdo ministerial 
+                                                                        n&uacute;mero 224 del 9 de Agosto de 2.004 lo convierte en Instituto Tecnol&oacute;gico.
+									</p><br/>
+                                                                        
+                                                                        <p>Los j&oacute;venes bachilleres al tener una nueva opci&oacute;n de adquirir una profesi&oacute;n intermedia e innovadora, 
+                                                                            el Instituto selecciona a un grupo de profesionales, docentes, con s&oacute;lidos conocimientos en cada una de las 
+                                                                            asignaturas, para cumplir acertadamente con los prop&oacute;sitos de fundar la instituci&oacute;n que beneficia a los 
+                                                                            bachilleres que desean prepararse, y actualmente cuenta con tres Carreras: <font face="Calisto MT" style="font-size: 11pt; font-style: italic; letter-spacing: 0em"><b>
+									Sistemas, Marketing y Contabilidad.</b></font></p><br/>                                                                        
+									
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+                                 <!-- fin contenido central -->
+													
+			</tbody>
+		</table>
+        <!-- fin tabla contenido -->      
+        <br/>
+        <a t:type="pagelink" t:page="Index" href="#"><img align="center" border="0" style="width: 40px" alt="Facebook" src="${context:Recursos/Imagenes/boton_atras.png}"/></a><br/>
+</div> 
+</html>
