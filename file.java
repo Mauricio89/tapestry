@@ -8,7 +8,7 @@ package com.mycompany.tapestry_1.services;
  *
  * @author Mauricio
  */
-public final class file {
+public final class File {
     private long id;
         private String title;
         private String name;

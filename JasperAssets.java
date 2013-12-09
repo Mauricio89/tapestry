@@ -10,7 +10,7 @@ package com.mycompany.tapestry_1.data;
  */
 public enum JasperAssets {
     RECEIPT_TOOLS_STOCK("toolsStock.jasper"),
-    TICKET_EXPORTER("ticketExporter.jasper");
+    TICKET_EXPORTER("carrera.jasper");
     //TODOS los demas ...
     private final String name;
     
@@ -19,6 +19,7 @@ public enum JasperAssets {
     }
     
     public String getURL() {
-        return "http://host/" + name;
+        //return "http://host/" + name;
+        return "http://localhost:8080/" + name;
     }
 }

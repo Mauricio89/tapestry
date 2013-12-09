@@ -6,8 +6,8 @@ package com.mycompany.tapestry_1.services;
 
 import com.mycompany.tapestry_1.data.JasperAssets;
 import com.mycompany.tapestry_1.data.JasperReportType;
+import com.mycompany.tapestry_1.services.File;
 import java.io.ByteArrayOutputStream;
-import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Collection;
@@ -78,13 +78,13 @@ public class JasperReportGenerator {
             ByteArrayOutputStream baos, 
             JasperReportType type) {
         
-        //File file = new File();
-        file.setContent(baos.toByteArray());
-        file.setExtension(type.getExtension());
-        file.setName(name);
-        file.setSize(baos.size());
-        file.setTitle(name);
-        file.setType(type.getType());
+        File file = new File();
+        File.setContent(baos.toByteArray());
+        File.setExtension(type.getExtension());
+        File.setName(name);
+        File.setSize(baos.size());
+        File.setTitle(name);
+        File.setType(type.getType());
         
         return file;
     }
