@@ -1,0 +1,54 @@
+<html t:type="Plantilla1" titulo="ITS San Gabriel" t:sidebarTitle="Framework Version"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd"
+      xmlns:p="tapestry:parameter">
+
+<div align="center">           
+  <!-- tabla contenido -->         
+        <table width="100%" border="0" bordercolor="#8D0A0C" cellpadding="0" cellspacing="0" align="center">
+			<tbody>
+                <!-- titulo -->
+				<tr>
+                                    &nbsp;
+					<td align="center" colspan="3"><font size="5" color="#009999" face="Georgia, Times New Roman, Times, serif" dir="ltr" > <b>QUIENES SOMOS </b> </font> </td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+				</tr>
+                <!-- contenido central -->               
+				<tr>
+					<td align="center" valign="top">
+						<table border="0" cellpadding="0" cellspacing="0" width="650">
+                                                    <tr>
+                                                        &nbsp;
+                                                        <td align="left" colspan="3"><font size="4" color="#99b7a0" face="Georgia, Times New Roman, Times, serif" dir="ltr" > <b>VISI&Oacute;N</b> </font> </td>
+                                                    </tr>
+							<tr>
+								<td class="txtcuerpo" style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: justify; font-size:10pt">
+                                                                    <p>El Instituto Tecnol&oacute;gico Superior San Gabriel se constituya hasta el a&nacute;o 2015 en un centro Educativo generador de 
+                                                                        innovaciones acad&eacute;micas, pedag&oacute;gicas, t&eacute;cnicas, administrativas y disciplinarias, que permiten a los y las estudiantes una formaci&oacute;n integral, dirigida a cubrir las exigencias  laborales del sector productivo y tecnol&oacute;gico para ejercer un rol protag&oacute;nico en la sociedad. </p><br/>
+								</td>
+							</tr>
+                                                        <tr>
+                                                        &nbsp;
+                                                        <td align="left" colspan="3"><font size="4" color="#99b7a0" face="Georgia, Times New Roman, Times, serif" dir="ltr" > <b>MISI&Oacute;N</b> </font> </td>
+                                                    </tr>
+							<tr>
+								<td class="txtcuerpo" style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: justify; font-size:10pt">
+                                                                    <p>El Instituto Tecnol&oacute;gico Superior San Gabriel es una Instituci&oacute;n Particular de Educaci&oacute;n Superior, comprometida con la formaci&oacute;n integral de T&eacute;cnicos y Tecn&oacute;logos, profesionales en 
+                                                                        el &aacute;rea de la Contabilidad, la Inform&aacute;tica y el Marketing,  cr&iacute;ticos y competentes, con una preparaci&oacute;n de eficiencia eficacia y efectividad, acorde a la din&aacute;mica del mercado global, generando soluciones que creen bienestar en nuestra sociedad y el mundo, a partir de la autoevaluaci&oacute;n, la excelencia acad&eacute;mica, cient&iacute;fica y tecnol&oacute;gica. </p><br/>
+								</td>
+							</tr>
+                                                    </table>
+					</td>
+				</tr>
+                <!-- fin contenido central -->
+				<tr>
+					<td>&nbsp;</td>
+				</tr>										
+			</tbody>
+		</table>
+        <!-- fin tabla contenido -->        
+        <br/>
+        <a t:type="pagelink" t:page="Index" href="#"><img align="center" border="0" style="width: 40px" alt="Facebook" src="${context:Recursos/Imagenes/boton_atras.png}"/></a><br/>
+</div> 
+</html>

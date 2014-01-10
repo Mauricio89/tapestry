@@ -1,0 +1,40 @@
+<html t:type="Plantilla" titulo="ITS San Gabriel" t:sidebarTitle="Framework Version"
+        xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd" 
+        xmlns:p="tapestry:parameter"> 
+     <style>
+    .table{border-collapse: collapse; }
+    .table td,table th{border:1px solid #999; padding:5px;}
+    </style>
+    
+   <div align="center">
+    <ul> 
+        <h20 align="center" class="style3"><strong>Lista de Alumnos</strong></h20> 
+        <br/>
+        <br/>        
+        <a href="#" t:type="pagelink" t:page="InsertarAlumnos"><img alt="Nuevo" style="border-width:0" src="${context:Recursos/Imagenes/news.gif}"/></a>
+        <br/>
+        <br/>
+        <table border="2" class="table">
+            <tr>
+                <th><span >N.-</span></th>                
+                <th><span >C&eacute;dula</span></th>        
+                <th><span >Nombres</span></th>                
+                <th><span >Direcci&oacute;n</span></th>
+                <th><span >Tel&eacute;fono</span></th>
+                <th><span >Celular</span></th>                                 
+                <th colspan="2"><span>Opciones</span></th>
+            </tr> 
+            <tr t:type="loop" t:source="alumnos" t:value="alumno">               
+                   <td>${alumno.idalumno}</td>
+                   <td>${alumno.cedula}</td> 
+                   <td>${alumno.nombres}</td>
+                   <td>${alumno.direccion}</td>
+                   <td>${alumno.telefono}</td>
+                   <td>${alumno.celular}</td>
+                    <td><t:pagelink page="ActualizarAlumnos" t:context="alumno.idalumno">Actualizar</t:pagelink></td>
+                    <td><t:actionlink t:id="delete" context="alumno.idalumno" t:mixins="Confirm" t:message="Esta Seguro de Eliminar el Alumno ${alumno.nombres}?">Eliminar</t:actionlink></td>           
+                </tr>
+      </table>               
+    </ul>
+    </div> 
+ </html>
