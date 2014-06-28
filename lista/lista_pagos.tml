@@ -1,0 +1,31 @@
+<html t:type="Plantilla" titulo="ITS San Gabriel" t:sidebarTitle="Framework Version"
+        xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd" 
+        xmlns:p="tapestry:parameter"> 
+     <div align="center">  
+        <h20 align="center" class="style3"><strong>Lista de Alumnos</strong></h20> 
+        
+        <table border="2" width="400" class="table">
+            <tr>
+                <th><span >N.-</span></th>                
+                <th><span >Alumno</span></th>        
+                <th><span >Pago</span></th>                
+                <th><span >Carrera</span></th>                
+                <th><span >Semestre</span></th>                             
+                <th><span >Secci&oacute;n</span></th>
+                <th><span >Per&iacute;odo</span></th>               
+            </tr> 
+            <tr t:type="loop" t:source="pagosalumnos" t:value="pagoalumno">
+                <td>${pagoalumno.idalum_pag}</td>
+                <td>${pagoalumno.idalumno}</td>
+                <td>${pagoalumno.idpago}</td>
+                <td>${pagoalumno.idcarrera}</td>
+                <td>${pagoalumno.idsemestre}</td>
+                <td>${pagoalumno.seccion}</td>
+                <td>${pagoalumno.periodo}</td>                   
+            </tr>
+            <tr t:type="loop" t:source="carrera">               
+                   <td>${carrera.ncarrera}</td>                   
+            </tr>
+      </table>       
+    </div> 
+ </html>
