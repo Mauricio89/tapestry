@@ -1,0 +1,13 @@
+<html t:type="Plantilla" titulo="ITS San Gabriel" t:sidebarTitle="Framework Version"
+        xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd" 
+        xmlns:p="tapestry:parameter"> 
+     <div align="center">  
+        <h20 align="center" class="style3"><strong>Lista de Pagos de Alumnos</strong></h20> 
+        <t:grid source="generalpagosalumnos" rowsPerPage="10" row="generalpagoalumno" t:include="cedula,nombres,fecha,npago,precio,ncarrera" add="imprimir" pagerPosition="both">
+            <p:imprimircell>    
+                <t:pagelink page="PasarDatos" context="generalpagoalumno.nidalum_pag" target="_blank">Imprimir</t:pagelink>                      
+            </p:imprimircell> 
+        </t:grid> 
+        ${total}
+    </div> 
+ </html>
